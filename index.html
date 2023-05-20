@@ -5,18 +5,410 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-    <header>
-        Barra de navegacion
+  <header>
+     <div class="menu container">
+        <input type="checkbox" id="menu"/>
+        <label for="menu"> 
+        </label>
+        <nav class="navbar">
+          <div class="menu-1">
+            <ul>
+              <li><a class="color" href="#">Recetas</a></li>
+              <li><a class="color" href="#">Nosotros</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-2">
+            <div class="socials">
+              <a href="#">
+                <div class="social">
+                  <img class="social" src="./imagenes/red.png" alt="icono de wsp">
+                </div>
+              </a>
+              <a href="#">
+                <div class="social">
+                  <img class="social" src="./imagenes/red (2).png" alt="icono de facebook">
+                </div>
+              </a>
+              <a href="#">
+                <div class="social">
+                  <img class="social" src="./imagenes/red (3).png" alt="icono de instagram">
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div> 
+   
+      <div class="header-content container">
+        <div class="swiper mySwiper-1">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-txt">
+                  <h1>Muzzalla</h1>
+                  <p>Nuestra muzzarella es de masa casera, salsa de tomate picado, queso muzzalla y oregano.</p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img class="imagenes" src="./imagenes/pizza muzza.jpg" alt="pizza de tomate">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-txt">
+                  <h1>Napolitana</h1>
+                  <p>Nuestra napolitana es de masa casera, salsa de tomate picado, jamon, queso muzzalla, tomates cherry, aceitunas negras y oregano.</p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img class="imagenes" src="./imagenes/pizza napo.jpg" alt="pizza de tomate">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-txt">
+                  <h1>Palmito</h1>
+                  <p>Nuestra pizza de palmito es de masa casera, salsa de tomate picado, queso muzzalla, palmito, salsa golf, morrones, aceitunas negras y oregano.</p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img class="imagenes" src="./imagenes/pizza tomate.jpg" alt="pizza de tomate">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-txt">
+                  <h1>Especial</h1>
+                  <p>Nuestra pizza especial es de masa casera, salsa de tomate picado, jamon, queso muzzalla, morron, aceitunas negras y oregano.</p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img class="imagenes" src="./imagenes/pizza especial.jpg" alt="pizza de tomate">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-txt">
+                  <h1>Rucula</h1>
+                  <p> Nuestra pizza de rucula es de masa casera, salsa de tomate picado, queso muzzalla, rucula, jamon crudo, queso rallado, aceitunas negras y oregano.</p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img class="imagenes" src="./imagenes/pizza rucula.jpg" alt="pizza de rucula">
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-txt">
+                  <h1>Peperoni</h1>
+                  <p> Nuestra pizza de peperoni es de masa casera, salsa de tomate picado, queso muzzalla, fetas de salame, aceitunas negras y oregano.</p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img class="imagenes" src="./imagenes/pizza peperoni.jpg" alt="pizza de rucula">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="slider">
+                <div class="slider-txt">
+                  <h1>Fugazzetta</h1>
+                  <p>Nuestra pizza de fugazza es de masa casera, salsa de tomate picado, queso muzzalla, aceitunas negras, cebollas acaramelizadas y oregano.</p>
+                  <div class="botones">
+                    <a href="#" class="btn-1">Comprar</a>
+                    <a href="#" class="btn-1">Menu</a>
+                  </div>
+                </div>
+                <div class="slider-img">
+                  <img class="imagenes" src="./imagenes/pizza cebolla.jpg" alt="pizza de cebolla">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div> 
     </header>
-    <main>
-        <h1>Institucion de Lenguas</h1>
-        <p>En nuestra institucion podras aprender diversos idiomas, entre ellos: Ingles, Italiano y Frances</p>
+    <main class="products">
+      <div class="tabs container">      
+       
+        <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+        <label for="tab1">Pizzas</label>
+        <div class="tab">
+          
+          <div class="swiper mySwiper-2" id="swiper1">
+            <div class="swiper-wrapper">
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="poduct-img">
+                    <h4>Nuevo</h4>
+                    <img src="./imagenes/pizza queso.jpg" alt="pizza de queso">
+                  </div>
+                  <div class="produ-txt">
+                    <h4>Producto</h4>
+                    <p>Calidad de primera</p>
+                    <span class="price">$1.100</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="poduct-img">
+                    <h4>Nuevo</h4>
+                    <img src="./imagenes/pizza cebolla.jpg" alt="pizza de cebolla">
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>Calidad de primera</p>
+                    <span class="price">$1.500</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="poduct-img">
+                    <h4>Nuevo</h4>
+                    <img src="./imagenes/pizza rucula.jpg" alt="pizza de rucula">
+                  </div>
+                  <div class="product-txt">
+                    <h4>Producto</h4>
+                    <p>Calidad de primera</p>
+                    <span class="price">$1.200</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+          <label for="tab2">empanadas</label>
+          <div class="tab">
+            
+            <div class="swiper mySwiper-2" id="swiper2">
+              <div class="swiper-wrapper">
+              </div>
+  
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+  
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="poduct-img">
+                      <h4>Nuevo</h4>
+                      <img src="./imagenes/pizza queso.jpg" alt="pizza de queso">
+                    </div>
+                    <div class="product-txt">
+                      <h4>Producto</h4>
+                      <p>Calidad de primera</p>
+                      <span class="price">$900</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="poduct-img">
+                      <h4>Nuevo</h4>
+                      <img src="./imagenes/pizza cebolla.jpg" alt="pizza de cebolla">
+                    </div>
+                    <div class="product-txt">
+                      <h4>Producto</h4>
+                      <p>Calidad de primera</p>
+                      <span class="price">1.250</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="poduct-img">
+                      <h4>Nuevo</h4>
+                      <img src="./imagenes/pizza rucula.jpg" alt="pizza de rucula">
+                    </div>
+                    <div class="product-txt">
+                      <h4>Producto</h4>
+                      <p>Calidad de primera</p>
+                      <span class="price">$1.300</span>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+  
+            </div>
+
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">tacos</label>
+            <div class="tab">
+              
+              <div class="swiper mySwiper-3" id="swiper3">
+                <div class="swiper-wrapper">
+                </div>
+    
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+    
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <div class="poduct-img">
+                        <h4>Nuevo</h4>
+                        <img src="./imagenes/pizza queso.jpg" alt="pizza de queso">
+                      </div>
+                      <div class="product-txt">
+                        <h4>Producto</h4>
+                        <p>Calidad de primera</p>
+                        <span class="price">$1.000</span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <div class="poduct-img">
+                        <h4>Nuevo</h4>
+                        <img src="./imagenes/pizza cebolla.jpg" alt="pizza de cebolla">
+                      </div>
+                      <div class="product-txt">
+                        <h4>Producto</h4>
+                        <p>Calidad de primera</p>
+                        <span class="price">$1.600</span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <div class="poduct-img">
+                        <h4>Nuevo</h4>
+                        <img src="./imagenes/pizza rucula.jpg" alt="pizza de rucula">
+                      </div>
+                      <div class="produ-txt">
+                        <h4>Producto</h4>
+                        <p>Calidad de primera</p>
+                        <span class="price">$1.250</span>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+    
+              </div>
+
+        </div>
+
+      
+    
    </main>
+    <section class="info container">
+      <div class="info-img">
+        <img src="./imagenes/masa.jpg" alt="">
+      </div>
+      <div class="info-txt">
+        <h2>Informacion</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique, molestias laborum, itaque facere quas laudantium perferendis iste in eligendi numquam expedita animi nobis! Fugiat ratione eius dolor nulla distinctio?</p>
+      <a href="#" class="btn-2">Mas informacion</a>
+      </div>    
+    </section> 
+    <section>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.6833662680956!2d-64.2024990253779!3d-31.450382797893795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2544af94463%3A0x6120ae92c3d2a3c5!2sAv.%20V%C3%A9lez%20Sarsfield%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1684382759857!5m2!1ses-419!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     <footer>
-        Redes sociales (instagram, facebook,gmail)
-    </footer> 
+      <section class="horario">
+        <div class="horario-info container">
+          <h2>No te quedes con las ganas!!!</h2>
+          <div class="horario-txt">
+            <div class="txt">
+              <h4>Direccion</h4>
+              <p>Av.Velez Sarsfield 3458 - Ciudad de Cordoba, Argentina</p>
+            </div>
+  
+            <div class="txt">
+              <h4>Horarios</h4>
+              <p>Lunes a Viernes</p>
+              <p> de 12:00hs a 15:hs y de 20:00 a 00:00hs</p>
+              <p>Sabado, Domingo y Feriados</p> 
+              <p>de 11:30hs a 15:hs y de 20:00 a 01:00hs</p>
+            </div>
+  
+            <div class="txt">
+              <h4>Telefono</h4>
+              <p> Delivery disponible todos los dias</p>
+              <p>3541235707</p>
+            </div>
+          
+            <div class="txt">
+              <h4>Buscanos en nuestras redes sociales</h4>
+              <div>
+                <img class="social" src="./imagenes/red.png" alt="icono de wsp">
+              </div>
+            </a>
+            <a href="#">     
+              <div>
+                <img class="social" src="./imagenes/red (2).png" alt="icono de facebook">
+              </div>
+            </a>
+            <a href="#">
+              <div>
+                <img class="social" src="./imagenes/red (3).png" alt="icono de instagram ">
+              </div>
+            </a>
+          </div>          
+            </div>  
+          </div>
+        </div>
+      </section> 
+    </footer>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 </html>
