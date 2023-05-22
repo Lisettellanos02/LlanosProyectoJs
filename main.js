@@ -54,15 +54,15 @@ let apellido = prompt ("ingrese su apellido");
 } 
 
 //si quiero o no comprar un celular
-let respuesta = prompt ("¿Quieres comprar un celular?").toLowerCase();
+let respuesta = prompt ("¿Quieres encargar una pizza?").toLowerCase();
 if (respuesta === "si"){
-alert ("Aqui encontraras las mejores promociones");
+alert ("Aqui encontraras las mejores pizzas a un precio increible");
 }else{
-    alert("Lo esperamos cuando quieras comprar un dispositivo movil");
+    alert("te esperamos en otra ocasion");
 }
 
 //producto disponible o no disponible
-const dispositivos = ["samsungS23", "samsungS22 ultra", "pantalon"];
+const dispositivos = ["muzzarella", "napolitana", "palmito", "especial", "rucula", "peperoni", "fugazzetta"];
 let marca = prompt ("ingrese el nombre del producto a buscar");
 let encontrado = productos.includes(marca);
 if(encontrado){
@@ -72,7 +72,7 @@ if(encontrado){
 }
 
 
-//precio y modelos de celulares
+//precio y variedad de pizzas
 class Producto{
     constructor(nombre, precio, imagen){
         this.nombre = nombre;
@@ -84,54 +84,73 @@ class Producto{
         this.vendido = true;
     }
 }
-const producto1 = new Producto("Samsung J7", "178000", "htpp:asdf")
-const producto2 = new Producto("Samsung S20 FE", "230000", "htpp:asgd")
-const producto3 = new Producto("Samsung A70", "56000", "htpp:asud")
-const producto4 = new Producto("Samsung S23", "350000", "htpp:asbf")
-const producto5 = new Producto("Samsung A50 Plus", "450000", "htpp:rsdf")
-const producto6 = new Producto("Samsung S22 Ultra", "280000", "htpp:aedf")
-const producto7 = new Producto("Samsung S23 Ultra", "160000", "htpp:asof")
-console.log(producto1);
-producto1.vender();
-console.log(producto1);
-console.log(producto2);
-console.log(producto3);
-console.log(producto4);
-console.log(producto5);
-console.log(producto6);
-console.log(producto7);
+class Producto{
+    constructor(id, pizza, precio){
+        this.id = id;
+        this.pizza = pizza;
+        this.precio = precio;
+    }
+}
+const pizzas =[];
+const producto1 = new Producto(1, "Muzzarella", 1600);
+const producto2 = new Producto(2, "Napolitana", 2000);
+const producto3 = new Producto(3, "Palmito", 2300);
+const producto4 = new Producto(4, "Especial", 2100);
+const producto5 = new Producto(5, "Rucula", 2400);
+const producto6 = new Producto(6, "Peperoni", 2200);
+const producto7 = new Producto(7, "Fugazzetta", 2300);
+pizzas.push(producto1);
+pizzas.push(producto2);
+pizzas.push(producto3);
+pizzas.push(producto4);
+pizzas.push(producto5);
+pizzas.push(producto6);
+console.log(pizzas);
 
-//pesonas que tambien compraron 
+//pesonas que encargaron pizza
 function Persona(info){
     this.nombre = info.nombre;
-    this.edad = info.edad;
     this.direccion = info.direccion;
+    this.encargo = info.encargo;
+    this.total = info.total;
 }
 const persona1 = new Persona({
 nombre: "Ana Paula Rossales",
-edad: 30,
-direccion: "Cordoba Capital",
+direccion: "Cordoba 498",
+encargo: "una Muzzarella",
+total: 1600,
 });
 const persona2 = new Persona({
 nombre: "Luis Cabrera",
-edad: 55,
 direccion: "Av. Juan.B Justo 334",
+encargo: "una Muzzarella y media Especial",
+total: 2650,
 });
+
 const persona3 = new Persona({
 nombre: "Jose Ernesto Diaz",
-edad: 43,
 direccion: "Av. Velez Sarfield 46",
+encargo: "una de Peperoni",
+total: 2200,
 });
 const persona4 = new Persona({
 nombre: "Lucas Miretti",
-edad: 28,
 direccion: "Av Los Sauces 500",
+encargo: "una de Fugazzetta",
+total:2300,
 });
+const persona5 = new Persona({
+nombre: "Patricio Morales",
+direccion: "Av Los Platanos 556",
+encargo: "una de Rucula",
+ total: 2400,
+    });
 
 console.log(persona1);
 console.log(persona2);
 console.log(persona3);
 console.log(persona4);
+console.log(persona5);
 
 //calcular intereses
 const suma = (a, b) => a + b;
@@ -145,6 +164,6 @@ let precioNuevo = resta (suma(precioproducto, iva(precioproducto)), descuento);
 console.log(nuevoPrecio);
 
 //agrego otro elemento
-const productos = ["celular", "cargador", "vidrio templado y funda"];
-productos.splice(1, 0, "auriculares inalambricos");
+const productos = ["pizza", "empanadas"];
+productos.splice(1, 0, "gaseosa");
 console.log(productos);
