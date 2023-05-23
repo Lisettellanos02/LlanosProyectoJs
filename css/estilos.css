@@ -62,11 +62,29 @@ opacity: 1;
     color: #ffffff;
     font-size: 30px;
 }
+.precio{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
 
  .navbar{
     display: flex;
+    background-color: darkgoldenrod;
  }   
+
+ .nav-link{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
  
+ .nav-link:hover{
+  color: #322f2f;
+ }
+
+
  .menu-1{
     margin-right: 180px;
  }
@@ -76,14 +94,6 @@ opacity: 1;
     display: flex;
     align-items: center;
  }
-
- .logo-1{
-    width: 0;
-}
- 
- .logo-2{
-      width: 150px;
-}
      
 .socials{
     display: flex;
@@ -101,21 +111,6 @@ opacity: 1;
     border-radius: 30%;
 }
 
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li {
- font-size: 18px;
- padding: 20px;
- color: aliceblue;
- display: block;
-}
-
-.menu .navbar ul li {
-    background-color:#db241b;
-}
 
 #menu{
     display: none;
@@ -159,6 +154,7 @@ opacity: 1;
 .botones{
     margin-top: 50px;
 }
+
 .btn-1{
     display: inline-block;
     text-decoration: none;
