@@ -1,20 +1,42 @@
 //colocar datos del cliente
-let nombre = prompt ("ingrese su nombre");
+let nombres = prompt ("ingrese su nombre");
 let apellido = prompt ("ingrese su apellido");
 
- if (nombre != "" && apellido != ""){
-    alert (`Bienvenido ${nombre} ${apellido}`);
+ if (nombres != "" && apellido != ""){
+    alert (`Bienvenido ${nombres} ${apellido}`);
  }else{
-    alert("Nombre y Apellido son requeridos");
+    alert("Nombres y Apellido son requeridos");
 } 
 
-//si quiero o no comprar un celular
+//si quiero o no comprar una pizza
 let respuesta = prompt ("¿Quieres encargar una pizza?").toLowerCase();
 if (respuesta === "si"){
 alert ("Aqui encontraras las mejores pizzas a un precio increible");
 }else{
     alert("te esperamos en otra ocasion");
 }
+
+//find
+const variedades = [
+    {id: 1, nombre: "Muzzarella", precio: 1600},
+    {id: 2, nombre: "Napolitana", precio: 2000},
+    {id: 3, nombre: "Palmito", precio: 2300},
+    {id: 4, nombre: "Especial", precio: 2100},
+    {id: 5, nombre: "Rucula", precio: 2400},
+    {id: 6, nombre: "Peperoni", precio: 2200},
+    {id: 7, nombre: "Fugazzetta", precio: 2300},
+];
+
+let nombre = prompt ("ingrese el nombre de la pizza que quiera encargar");
+const encontro = variedades.find(item => item.nombre === nombre);
+let mensaje = `
+Id: ${encontrado.id}
+Nombre: ${encontro.nombre}
+Precio: $${encontro.precio}
+`;
+alert(mensaje);
+
+
 
 //producto disponible o no disponible
 const dispositivos = ["muzzarella", "napolitana", "palmito", "especial", "rucula", "peperoni", "fugazzetta"];
