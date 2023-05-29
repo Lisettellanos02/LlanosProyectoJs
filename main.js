@@ -29,13 +29,16 @@ const variedades = [
 
 let nombre = prompt ("ingrese el nombre de la pizza que quiera encargar");
 const encontro = variedades.find(item => item.nombre === nombre);
+if (encontrado){ 
 let mensaje = `
 Id: ${encontrado.id}
 Nombre: ${encontro.nombre}
 Precio: $${encontro.precio}
 `;
 alert(mensaje);
-
+}else{
+    alert ("Producto no encontrado");
+}
 
 
 //producto disponible o no disponible
@@ -144,3 +147,27 @@ console.log(nuevoPrecio);
 const productos = ["pizza", "empanadas"];
 productos.splice(1, 0, "gaseosa");
 console.log(productos);
+
+//precio acorde a gastar
+let precio = parseInt (prompt("Ingrese el precio maximo que quiere gastar"));
+
+let encontrados = productos.filter(item => item.precio > precio);
+encontrados.forEach((item) => {
+    let mensaje = `
+    Id: ${item.id}
+    Nombre: ${item.nombre}
+    Precio: $${item.precio}
+    `;
+    alert(mensaje);
+});
+
+//promos dias miercoles
+const preciosPromoMiercoles= productos.map(item => {
+    return{
+        id: item.id,
+        nombre: item.nombre,
+        precio:item.precio - item.precio *0.21
+    }
+});
+console.log(preciosPromoMiercoles);
+
