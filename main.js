@@ -1,59 +1,41 @@
-//datos del cliente
-let nombres = prompt ("ingrese su nombre");
-let apellido = prompt ("ingrese su apellido");
+const contenedorProductos = document.querySelector('#contenedor-productos');
+console.log(productos)
 
- if (nombres != "" && apellido != ""){
-    alert (`Bienvenido ${nombres} ${apellido}`);
- }else{
-    alert("Nombres y Apellido son requeridos");
-} 
-
-//si quiere encargar pizza
-let respuesta = prompt ("¿Quieres encargar una pizza?").toLowerCase();
-if (respuesta === "si"){
-alert ("Aqui encontraras las mejores pizzas a un precio increible");
-}else{
-    alert("te esperamos en otra ocasion");
+const mostrarProductos = (data) => {
+data.forEach(producto =>{
+    const cardProducto = document.createElement('article');
+    cardProducto.setAttribute('id', 'tarjeta-producto');
+    cardProducto.innerHTML = `
+        <img class ="prod-img" src="${producto?.img}" alt="${producto?.nombre}" style="width: 75px"
+        <div class ="prod-description">
+        <h5 class= "obra-nombre">${producto?.nombre}</h5>
+        <h5 class= "obra-nombre">${producto?.autor}</h5>
+        <button id ='${producto.id}' class="btn-compra">COMPRAR</button>
+        </div>
+        `;
+    contenedorProductos.appendChild(cardProducto);
+})
+const btnComprar = document.querySelectorAll('.btn-compra');
+btnComprar.forEach(el => {
+    el.addEventListener('ckick', (e) =>{
+        agregarAlCarrito(e.target.id)
+    });
+})
 }
 
-const productos = [
-    {id: 1, nombre: "muzzarella", precio: 1600},
-    {id: 2, nombre: "napolitana", precio: 2000},
-    {id: 3, nombre: "palmito", precio: 2300},
-    {id: 4, nombre: "especial", precio: 2100},
-    {id: 1, nombre: "rucula", precio: 2400},
-    {id: 2, nombre: "peperoni", precio: 2000},
-    {id: 3, nombre: "fugazzetta", precio: 2300},
-];
-
-let nombre = prompt ("ingrese el nombre del producto a buscar").toLowerCase();
-const encontrado = productos.find(item => item.nombre === nombre);
-if (encontrado){
-let mensaje = `
-Id: ${encontrado.id}
-Nombre: ${encontrado.nombre}
-Precio: $${encontrado.precio}
-`;
-alert(mensaje);
-}else{
-    alert ("Prdoducto no encontrado");
+mostrarProductos(productos);
+const carrito = [];
+function agregarAlCarrito(id){
+    const existe = carrito.some(prod => prod.id === parseInt(id));
+    if(existe){
+        carrito.map(prod => prod.cantidad++)
+        
+    }else{
+        let prodEncontrado = productos.find(prod => prod.id === parseInt(id));
+        carrito.push(prodEncontrado);
+    }
+    
+    console.log(carrito);
 }
 
-//lo minimo q quiero gastar
-let precio = parseInt (prompt("Ingrese el precio minimo que quiere gastar"));
-
-let encontrados = productos.filter(item => item.precio > precio);
-encontrados.forEach((item) => {
-    let mensaje = `
-    Id: ${item.id}
-    Nombre: ${item.nombre}
-    Precio: $${item.precio}
-    `;
-    alert(mensaje);
-});
-
-const respuestas = (nombre) =>{
-    alert (`Hola ${nombre}`);
-};
-boton.addEventListener("click",() => respuestas ("su pedido fue encargado correctamente")); 
 
