@@ -8,7 +8,6 @@ let apellido = prompt ("ingrese su apellido");
     alert("Nombres y Apellido son requeridos");
 } 
 
-
 //si quiere encargar pizza
 let respuesta = prompt ("¿Quieres encargar una pizza?").toLowerCase();
 if (respuesta === "si"){
@@ -52,3 +51,9 @@ encontrados.forEach((item) => {
     `;
     alert(mensaje);
 });
+
+const respuestas = (nombre) =>{
+    alert (`Hola ${nombre}`);
+};
+boton.addEventListener("click",() => respuestas ("su pedido fue encargado correctamente")); 
+
