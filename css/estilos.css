@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2? family= Almarai:wght@400;700 & family= Poppins:wght@400;500;600;700;800 & display=swap' );
 
-/**{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,17 +12,13 @@ body{
     background-color: rgb(19, 19, 19);
     font-family: 'Almarai', sans-serif;
 }
-.imagenes{
-    width: 400px;
-    height: 250px;
-}
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.swiper-button-prev::after{
+/*.swiper-button-prev::after{
     font-size: 25px;
 }
 
@@ -46,7 +42,7 @@ opacity: 1;
 .swiper-pagination-bullet-active{
   background-color: #db241b;
   opacity: 1;
- }
+ }*/
 
 .menu{
       position: absolute;
@@ -62,11 +58,6 @@ opacity: 1;
     color: #ffffff;
     font-size: 30px;
 }
-.precio{
-    color: #ffffff;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    }
 
  .navbar{
     display: flex;
@@ -97,13 +88,15 @@ opacity: 1;
      
 .socials{
     display: flex;
-    margin-bottom: -200px;
+    margin-bottom: -150px;
 }
-.social{
-    
+.social{ 
     height: 60px;
-    width: 60px;
-   
+    width: 60px; 
+}
+
+.recetas{
+    margin-top: 150px;
 }
 
 .social:hover{
@@ -151,11 +144,8 @@ opacity: 1;
     font-size: 18px;
     color: goldenrod;
 }
-.botones{
-    margin-top: 10px;
-}
 
-.btn-1{
+.btn-compra{
     background-color: rgba(0,0,0.35);
     display: inline-block;
     text-decoration: none;
@@ -168,13 +158,11 @@ opacity: 1;
     margin-right: 20px;
     border-radius: 50px;
 }
-.btn-1:hover{
+.btn-compra:hover{
     background-color: #db241b;
     color: black;
     text-decoration: none;
 }
-
-
 
 .info{
     padding: 100px 0;
@@ -211,7 +199,7 @@ opacity: 1;
 }
 
 .horario{
-    padding: 100px 0px;
+    padding: 45px 0px;
     background-color:black ;
 }
 
@@ -345,6 +333,12 @@ opacity: 1;
     box-shadow: 0px 0px 9px rgba(0,0,0.35);
   }
 
+  .obra-nombre{
+   color: #ffffff;
+   font-size: 30px;
+   font-family: 'Times New Roman', Times, serif;
+  }
+
 @media(max-width: 991px){
     .menu{
         padding: 20px;
@@ -445,6 +439,7 @@ opacity: 1;
     .btn-1{
         font-size: 16px;
     }
+
     .horario{
         padding: 30px;
         text-align: center;
@@ -466,5 +461,4 @@ opacity: 1;
     .link h4{
         margin: 25px 0px 10px 0px;
     }
-
-}*/
+}
