@@ -49,13 +49,6 @@ formulario.addEventListener("submit", (e) => {
     console.log(inputs[1].value);
     console.log(inputs[2].value);
     console.log(inputs[3].value);
-    if(!inputs[2].value.includes(@)){
-        inputs[2].value = "" ;
-   
-    let div = document.createElement("div");
-    div.innerHTML = "debes colocar @";
-    document.body.append(div);
- }
 });
 
 
