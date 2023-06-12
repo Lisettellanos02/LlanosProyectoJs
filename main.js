@@ -39,3 +39,23 @@ function agregarAlCarrito(id){
 }
 
 
+
+let formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault ();
+    let inputs = e.target.children;
+    console.log(inputs[0].value);
+    console.log(inputs[1].value);
+    console.log(inputs[2].value);
+    console.log(inputs[3].value);
+    if(!inputs[2].value.includes(@)){
+        inputs[2].value = "" ;
+   
+    let div = document.createElement("div");
+    div.innerHTML = "debes colocar @";
+    document.body.append(div);
+ }
+});
+
+
