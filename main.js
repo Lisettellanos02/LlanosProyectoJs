@@ -17,7 +17,7 @@ data.forEach(producto =>{
 })
 const btnComprar = document.querySelectorAll('.btn-compra');
 btnComprar.forEach(el => {
-    el.addEventListener('ckick', (e) =>{
+    el.addEventListener('click', (e) =>{
         agregarAlCarrito(e.target.id)
     });
 })
